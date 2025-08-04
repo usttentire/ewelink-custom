@@ -1,7 +1,7 @@
 # ARG BUILD_FROM
 # FROM $BUILD_FROM
 
-FROM node:16-slim
+FROM nFROM node:16-bullseye-slim
 ENV CK_API_ENV=prod
 RUN apt-get update && apt-get install -y python build-essential
 RUN mkdir -p /workspace/node_modules
